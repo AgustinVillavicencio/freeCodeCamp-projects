@@ -1,0 +1,243 @@
+body,html{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    background-color:rgb(250, 33, 33);
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+:target {
+    scroll-margin-top: 50px; /* Ajusta según la altura de tu nav-bar */
+}
+
+#navbar{
+    background-color: rgb(11, 22, 41);
+    display :flex;
+    position:fixed;
+    width: 100%;
+    top:0;
+    height:50px;
+    align-items: center;
+    z-index:10;
+}
+
+#container-links{
+    margin-left: auto;
+}
+.nav-link{
+    text-decoration: none;
+    color:white;
+    padding:15px;
+    transition: background-color 0.3s;
+    overflow: hidden; /* Oculta el exceso de texto */
+    margin:-2px;
+}
+#text-navbar{
+    color:white;
+    text-align: center;
+    margin-left:auto;
+    margin-right:auto;
+    font-size: 33px;
+    padding-bottom: 5px;
+    padding-top:0;
+}
+
+.nav-link:hover,
+.nav-link:focus { /* Añadir foco para mejorar la accesibilidad */
+    background-color: rgb(4, 4, 65);
+}
+
+@media screen and (max-width: 425px) {
+
+    .nav-link{
+        text-decoration: none;
+        color:white;
+        padding:17px;
+        transition: background-color 0.3s;
+        overflow: hidden; /* Oculta el exceso de texto */
+        width:100%;
+        text-align: center;
+        font-size:14px;
+    }
+    
+    #nav-bar{
+        flex-direction: column; /* Apila los elementos en una sola columna */
+        align-items: center;
+        display: flex;
+        justify-content:center;
+        margin:0 auto;
+        width:100%;
+    }
+
+    #text-navbar{
+        margin-left:15px;
+        color:white;
+        font-size: 23px;
+    }
+}
+
+#welcome-section{
+    margin-top:50px;
+    height:89vh;
+    position: relative;
+}
+
+h1{
+    margin:0;
+    padding:0;
+    text-align: center;
+    font-size: 40px;
+    color:rgb(228, 228, 228);
+}
+
+#text-welcome{
+    padding:0;
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    width:100%;
+    height:30%;
+    transform: translate(-50%, -50%);
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#subtitle-welcome{
+    margin :0;
+    padding:0;
+    text-align: center;
+    margin-top:12px;
+    font-size: 30px;
+    color:rgb(11, 22, 41);
+}
+
+#projects{
+    background-color: rgb(26, 25, 25);
+    width:100%;
+    height:100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom:30px;
+}
+#project-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* Columnas automáticas, con un ancho mínimo de 200px */
+    grid-gap: 20px; /* Espacio entre las celdas */
+    width:100%;
+}
+.project-tile{
+    text-align:center;
+    position: relative;
+    display: flex; /* Esto asegura que los elementos se muestren en línea */
+    width: 240px; /* Ancho deseado */
+    height: 190px; /* Alto deseado */
+    margin-left:auto;
+    margin-right:auto;
+    flex-direction: column;
+    justify-content: center;
+    border:1px solid white;
+    text-decoration: none;
+    color:white;
+    border-radius: 3px;
+    background-color: rgb(17, 17, 17);
+    padding-bottom:3px;
+}
+
+.proyect-tile img {
+    width: auto; /* Ancho automático para mantener la proporción de la imagen */
+    height: auto; /* Altura automática para mantener la proporción de la imagen */
+    max-width: 100%; /* Ancho máximo del contenedor */
+    max-height: 100%; /* Altura máxima del contenedor */
+    object-fit: contain; /* Escala la imagen para que quepa dentro del contenedor sin recortarla */
+}
+
+@media screen and (max-width: 485px) {
+    #project-grid {
+        display: flex;
+        flex-direction: column; /* Cambia la dirección del flexbox a columna */
+        align-items: center; /* Centra los elementos horizontalmente */
+    }
+
+}
+
+#text-freecodecamp{
+    bottom:4px;
+    width:100%;
+    position: absolute;
+}
+
+#text-proyects{
+    color:white;
+}
+
+hr{
+    width:70%;
+    margin-bottom:19px;
+    max-width: 300px;
+}
+
+.proyect-tile:hover{
+    color:rgb(250, 33, 33);
+    transition: 0.5s;
+}
+
+#text-profile{
+    text-align: center;
+}
+
+.profiles{
+    text-decoration: none;
+    color:white;
+    display:flex;
+    align-items: center;
+    border-radius: 2px;
+
+}
+
+#profile{
+    display:flex;
+    flex-direction: column;
+    position:relative;
+    height:40vh;
+}
+
+#links-profile{
+    display: flex;
+    justify-content: space-evenly;
+    max-width: 600px;
+    width:100%;
+    margin-left:auto;
+    margin-right:auto;
+    margin-top:30px;
+}
+
+#links-profile div {
+    display: inline-flex;
+    align-items: center;
+    margin-right: 20px; /* Ajusta el espacio entre los íconos y los textos */
+}
+
+#links-profile svg {
+    width: 24px; /* Ajusta el tamaño de los íconos según sea necesario */
+    margin-right: 5px; /* Ajusta el espacio entre los íconos y los textos */
+}
+
+#links-profile span {
+    color: #ffffff; /* Color del texto */
+}
+
+#links-profile span:hover{
+    color: rgb(11, 22, 41);
+    transition: 0.5s;
+}
+
+.hr-profile{
+    width:70%;
+    margin-bottom:19px;
+    max-width: 300px;
+    background-color: black;
+    height: 2px;
+    border:0;
+}

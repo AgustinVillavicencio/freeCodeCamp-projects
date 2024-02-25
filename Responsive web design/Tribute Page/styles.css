@@ -1,0 +1,73 @@
+*{
+    padding:0;
+    margin:0;
+    font-family:"Poppins", sans-serif;
+    background-color:#c0c0c0;
+  }
+  
+  #image{
+    max-width:100%;
+    height:auto;
+    display:block;
+    margin:10px auto;
+  }
+  
+  #main{
+    padding:20px 0;
+  }
+  
+  #title{
+    text-align:center;
+    font-size:3em;
+    color:rgb(20,20,20);
+  }
+  
+  #img-div {
+      text-align: center;
+  }
+  
+  #tribute-info{
+    text-align:center;
+    font-size:1.5em;
+    color:rgb(20,20,20);
+  }
+  
+  #img-caption{
+    margin-top: 10px;
+    font-style: italic;
+  }
+  
+  h2{
+    width:90%;
+    max-width:1000px;
+    margin:50px auto 10px auto;
+    font-size:1.9em;
+  }
+  
+  #items ul{
+      max-width: 1000px;
+      margin: 0 auto;
+      line-height: 1.6;
+      display: block;
+      list-style-type: disc;
+      padding: 10px 50px;
+      
+  }
+  #items ul li{
+    color:red
+  }
+  
+  
+  #link{
+    margin-left:30px;
+    margin-top:30px;
+    font-size:0.9em;
+  
+  }
+  
+  #tribute-link{
+    text-decoration:none;
+    color:red;
+  }
+  
+  

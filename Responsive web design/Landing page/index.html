@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Landing Page</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header id="header">
+    <div class="header-text-img">
+      <img id ="header-img" alt="logo" src="https://www.svgrepo.com/show/148/speed.svg"/>
+      <div class="text-logo-div">
+        <h2 class="text-logo">Fast</h2>
+        <h2 class="text-logo">Delivery</h2>
+      </div>
+    </div>
+    <nav id="nav-bar">
+      <a href="#caracteristicas" class="nav-link">Características</a>
+      <a href="#como-funciona" class="nav-link">Como funciona?</a>
+      <a href="#precios" class="nav-link">Precios</a>
+    </nav>
+  </header>
+  
+  
+  <section id="info">
+    <h2 class="encabezado-email">Entérate de nuestras ofertas y promociones:</h2>
+    <form id="form" action="https://www.freecodecamp.com/email-submit" method="post">
+      <input type="email" id="email" name="email" placeholder="Ingresa tu email aqui..." required>
+      <input type="submit" id="submit" value="Enviar">
+    </form>
+  </section>
+
+
+  <section id="caracteristicas">
+    <ul>
+      <li><div class="li-completo"><div class="icon-ul"><svg fill="#f88400" height="200px" width="200px" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 122.88 122.88" xml:space="preserve" stroke="#f88400"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <style type="text/css"> .st0{fill-rule:evenodd;clip-rule:evenodd;} </style> <g> <path class="st0" d="M16.63,105.75c0.01-4.03,2.3-7.97,6.03-12.38L1.09,79.73c-1.36-0.59-1.33-1.42-0.54-2.4l4.57-3.9 c0.83-0.51,1.71-0.73,2.66-0.47l26.62,4.5l22.18-24.02L4.8,18.41c-1.31-0.77-1.42-1.64-0.07-2.65l7.47-5.96l67.5,18.97L99.64,7.45 c6.69-5.79,13.19-8.38,18.18-7.15c2.75,0.68,3.72,1.5,4.57,4.08c1.65,5.06-0.91,11.86-6.96,18.86L94.11,43.18l18.97,67.5 l-5.96,7.47c-1.01,1.34-1.88,1.23-2.65-0.07L69.43,66.31L45.41,88.48l4.5,26.62c0.26,0.94,0.05,1.82-0.47,2.66l-3.9,4.57 c-0.97,0.79-1.81,0.82-2.4-0.54l-13.64-21.57c-4.43,3.74-8.37,6.03-12.42,6.03C16.71,106.24,16.63,106.11,16.63,105.75 L16.63,105.75z"></path> </g> </g></svg></div>Llegamos a todos lados. Envíos a todo el país</div></li>
+      <li><div><div class="li-completo"><div class="icon-ul"><svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"><path d="M5.926 20.574a7.26 7.26 0 0 0 3.039 1.511c.107.035.179-.105.107-.175-2.395-2.285-1.079-4.758-.107-5.873.693-.796 1.68-2.107 1.608-3.865 0-.176.18-.317.322-.211 1.359.703 2.288 2.25 2.538 3.515.394-.386.537-.984.537-1.511 0-.176.214-.317.393-.176 1.287 1.16 3.503 5.097-.072 8.19-.071.071 0 .212.072.177a8.761 8.761 0 0 0 3.003-1.442c5.827-4.5 2.037-12.48-.43-15.116-.321-.317-.893-.106-.893.351-.036.95-.322 2.004-1.072 2.707-.572-2.39-2.478-5.105-5.195-6.441-.357-.176-.786.105-.75.492.07 3.27-2.063 5.352-3.922 8.059-1.645 2.425-2.717 6.89.822 9.808z" fill="#F88400"></path></g></svg></div>Ofertas exclusivas. Muy fácil comparar precios y calidades entre productos</div></li>
+      <li><div><div class="li-completo"><div class="icon-ul"><svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <g id="Interface / Credit_Card_01"> <path id="Vector" d="M3 11V15.8002C3 16.9203 3 17.4801 3.21799 17.9079C3.40973 18.2842 3.71547 18.5905 4.0918 18.7822C4.5192 19 5.07899 19 6.19691 19H17.8031C18.921 19 19.48 19 19.9074 18.7822C20.2837 18.5905 20.5905 18.2842 20.7822 17.9079C21 17.4805 21 16.9215 21 15.8036V11M3 11V9M3 11H21M3 9V8.2002C3 7.08009 3 6.51962 3.21799 6.0918C3.40973 5.71547 3.71547 5.40973 4.0918 5.21799C4.51962 5 5.08009 5 6.2002 5H17.8002C18.9203 5 19.4796 5 19.9074 5.21799C20.2837 5.40973 20.5905 5.71547 20.7822 6.0918C21 6.5192 21 7.07899 21 8.19691V9M3 9H21M7 15H11M21 11V9" stroke="#f88400" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path> </g> </g></svg></div>Todos los medios de pago.</div></li>
+    </ul>
+  </section>
+
+
+  <section id="como-funciona">
+    <h2>¿Como funciona nuestro servicio?</h2>
+    <div class="video-container">
+      <!-- Aquí va el código del iframe con la URL del video -->
+      <iframe src="https://www.youtube.com/embed/smqCOJW_mpA" frameborder="0" allowfullscreen id="video"></iframe>
+  </div>
+    </video>
+  </section>
+
+  <h2>Precios</h2>
+  <section id="precios">
+    <div class="price">
+      <h4>LITE</h4>
+      <h2>$100</h2>
+      <ul>
+        <li>2 reembolsos sin cargo</li>
+        <li>2 envios gratuitos</li>
+        <li>+100 puntos FastDelivery</li>
+      </ul>
+      <button type="submit" class="select">Seleccionar</button>
+    </div>
+    <div class="price">
+      <h4>PRO</h4>
+      <h2>$200</h2>
+      <ul>
+        <li>3 reembolsos sin cargo</li>
+        <li>3 envios gratuitos</li>
+        <li>+300 puntos FastDelivery</li>
+      </ul>
+      <button type="submit" class="select">Seleccionar</button>
+    </div>
+    <div class="price">
+      <h4>PREMIUM</h4>
+      <h2>$300</h2>
+      <ul>
+        <li>5 reembolsos sin cargo</li>
+        <li>5 envios gratuitos</li>
+        <li>+500 puntos FastDelivery</li>
+      </ul>
+      <button type="submit" class="select">Seleccionar</button>
+    </div>
+  </section>
+</body>
+</html>

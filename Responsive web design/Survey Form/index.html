@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">                               <title>Registration Page</title>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <h1 id="title">Registration Page</h1>
+    <p id="description">You can register here</p>
+    <form id="survey-form" action="">
+      <label id="name-label">Name and last name</label>
+      <input required id="name" type="text" placeholder="Enter your full name...">
+      <label id="email-label">Email</label>
+      <input type="email" required placeholder="Enter your email..." id="email">
+      <label id="number-label">Age</label>
+      <input placeholder="Age?" type="number" id=number min="1" max="3">
+      <label>Nationality</label>
+      <select id="dropdown">
+        <option value="" disabled selected>--Select your nationality--</option>
+        <option value="1">Argentinian</option>
+        <option value="2">Chilean</option>
+        <option value="3">Other</option>
+      </select>
+      <label>English level</label>
+      <label><input type="radio" name="English-level" value="begginer">Begginer</label>
+      <label><input type="radio" name="English-level" value="intermediate">Intermediate</label>
+      <label><input type="radio" name="English-level" value="advanced">Advanced</label>
+      <label>Skills</label>
+      <input type="checkbox" name="skills" value="html" id="html" value="html"><label class="check" for="html">HTML</label>
+      <input type="checkbox" name="skills" value="css" id="css"> <label for="css" class="check">CSS</label>
+      <input type="checkbox" name="skills" value="sql" id="sql"><label class="check" for="sql">SQL</label> 
+      <input type="checkbox" name="skills" value="javascript" id="javascript"><label for="javascript" class="check">JavaScript</label> 
+      <input type="checkbox" name="skills" value="java" id="java"> <label for="java" class="check">Java</label>
+      <textarea placeholder="Escriba datos a tener en cuenta aquí..." rows="4" cols="50"></textarea>
+      <button id="submit" type="submit">Submit</button>
+    </form>
+  </body>
+</html>

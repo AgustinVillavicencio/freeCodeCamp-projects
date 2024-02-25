@@ -1,0 +1,240 @@
+body,html{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+:target {
+    scroll-margin-top: 65px; /* Ajusta según la altura de tu nav-bar */
+}
+
+#header{
+    background-color: orange;
+    display :flex;
+    position:fixed;
+    z-index: 999;
+    width: 100%;
+    top:0;
+}
+.nav-link{
+    text-decoration: none;
+    color:white;
+    padding:25px 10px;
+    transition: background-color 0.3s;
+    overflow: hidden; /* Oculta el exceso de texto */
+    white-space: nowrap;
+    
+}
+
+#nav-bar{
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    margin-left: auto;
+}
+#nav-bar .nav-link:hover,
+#nav-bar .nav-link:focus { /* Añadir foco para mejorar la accesibilidad */
+    background-color: rgb(248, 132, 0);
+}
+
+#header-img{
+    width:50px;
+    margin-left:5px;
+    
+}
+
+
+.text-logo{
+    font-size:24px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin:0;
+    padding:0;
+}
+
+.text-logo-div{
+    display:flex;
+    flex-direction: column;
+    margin-left:2%;
+    justify-content: center;
+}
+
+.header-text-img{
+    display:flex;
+}
+
+@media screen and (max-width: 480px) {
+    #header {
+        flex-direction: column; /* Apila los elementos en una sola columna */
+        align-items: center; /* Centra los elementos horizontalmente */
+    }
+
+    .nav-link{
+        text-decoration: none;
+        color:white;
+        padding:10px 10px;
+        transition: background-color 0.3s;
+        overflow: hidden; /* Oculta el exceso de texto */
+        white-space: nowrap;
+        width:100%;
+        text-align: center;
+        font-size:15px;
+    }
+    
+    #nav-bar{
+        display: flex;
+        justify-content:center;
+        align-items: center;
+        margin:0 auto;
+        width:100%;
+    }
+    #nav-bar .nav-link:hover,
+    #nav-bar .nav-link:focus { /* Añadir foco para mejorar la accesibilidad */
+        background-color: rgb(248, 132, 0);
+    }
+
+    #header-img{
+        width:35px;
+        margin-right:auto;
+    }
+
+    .text-logo{
+        font-size:18px;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        margin:0;
+        margin-right:auto;
+        padding:0;
+        
+    }
+
+    .text-logo-div{
+        display:flex;
+        justify-content: center;
+        flex-direction:row; /* Cambia la dirección de la columna */
+        align-items: center; 
+    }
+
+    .header-text-img{
+        display:flex;
+    }
+
+}
+
+#info{
+    margin-top:69px;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-bottom:20px;
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+.icon-ul{
+    max-width: 40px;
+    
+}
+
+.icon-ul svg{
+    width:100%;
+    height:100%;
+}
+
+ul{
+    list-style-type:none;
+    display:flex;
+    flex-direction: column;
+}
+
+.li-completo{
+    display:flex;
+    justify-content: left;
+    align-items:center;
+    margin:15px 0;
+}
+
+.video-container {
+    width: 350px; /* Ancho deseado del video */
+    height: 220px; /* Altura deseada del video */
+}
+/* Estilos para el video dentro del contenedor */
+.video-container iframe {
+    width: 100%; /* Ajusta el ancho del video al 100% del contenedor */
+    height: 100%; /* Ajusta la altura del video al 100% del contenedor */
+}
+
+#como-funciona{
+    display:flex;
+    flex-direction: column;
+    justify-content: center ;
+    align-items: center;
+    margin-top: 0;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+#precios {
+    margin-top: 60px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    max-width:600px ;
+    margin: 0 auto;
+}
+
+.price {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    width: calc(100% / 3);
+    margin: 10px;
+    border: 1px solid #000;
+    border-radius: 3px;
+    padding:20px 0;
+}
+
+.price h4 {
+    margin-top: 0;
+}
+
+.price h3 {
+    margin-bottom: 5px;
+}
+
+.price ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.price li {
+    margin-bottom: 5px;
+}
+
+.select {
+    display: block;
+    margin-top: 10px;
+    padding: 10px 20px;
+    background-color: orange;
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.select:hover {
+    background-color: rgb(248, 132, 0);
+}
+
+@media (max-width: 600px) {
+    #precios {
+      flex-direction: column;
+    }
+    .price {
+      max-width: 300px;
+      width: 100%;
+      margin: 0 auto;
+      margin-bottom: 10px;
+    }
+}
